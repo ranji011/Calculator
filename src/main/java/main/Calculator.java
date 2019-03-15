@@ -14,17 +14,20 @@ public class Calculator {
         int choose;
         choose = inp.nextInt();
         switch (choose){
-        case 1:
-            System.out.println(add( num1,num2));
+        case 1:{ans=add( num1,num2);
+            System.out.println(ans);}
             break;
         case 2:
-            System.out.println(sub( num1,num2));
+        {ans=sub( num1,num2);
+        System.out.println(ans);}
             break;      
         case 3:
-            System.out.println(mult( num1,num2));
+        {ans=mult( num1,num2);
+        System.out.println(ans);}
             break;
         case 4:
-            System.out.println(div( num1,num2));
+        {ans=div( num1,num2);
+        System.out.println(ans);}
             break;
             default:
                 System.out.println("Illigal Operation");
@@ -38,26 +41,26 @@ public class Calculator {
     public static int add(int x, int y)
     {
     	int result=0;
-//        write your code here 
+         result=x+y;
     	
         return result;
     }
     public static int sub(int x, int y)
     {
     	int result=0;
-//        write your code here
+    	result=x-y;
         return result;
     }
     public static int mult(int x, int y)
     {
     	int result=0;
-//      write your code here        
+    	result=x*y;      
     	return result;
     }
     public static int div(int x, int y)
     {
     	int result=0;
-//      write your code here
+    	result=x/y;
     	return result;
     }
 
